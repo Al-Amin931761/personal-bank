@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Bank</title>
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -19,6 +19,7 @@
     <!-- main section -->
     <main>
         <section>
+            <!-- output card  -->
             <div class="output-card-container">
                 <div class="output-card green">
                     <h1>Deposit</h1>
@@ -31,6 +32,25 @@
                 <div class="output-card blue">
                     <h1>Balance</h1>
                     <p>$<span>00</span></p>
+                </div>
+            </div>
+
+            <div class="input-card-container">
+                <!-- input card -->
+                <div class="input-card">
+                    <h1 class="green">Deposit Money</h1>
+                    <div>
+                        <input type="text" id="deposit-value">
+                        <button class="bg-green" onclick="deposit()">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="input-card">
+                    <h1 class="red">Withdraw Money</h1>
+                    <div>
+                        <input type="text" id="withdraw-value">
+                        <button class="bg-red" onclick="withdraw()">Withdraw</button>
+                    </div>
                 </div>
             </div>
         </section>
