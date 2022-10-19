@@ -95,10 +95,15 @@ input {
 button {
     font-family: 'Comfortaa', cursive;
     height: 40px;
+    width: 85px;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 .bg-green {
